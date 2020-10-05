@@ -4,7 +4,11 @@ class Array
     {
     byte[] array1 = new byte[10];
     array1[0] = 23;
+<<<<<<< HEAD
     array2[10] = 28;
+=======
+    array[10] = 28;
+>>>>>>> 301c4214ea5e0449dead4e2d1e484379f176e3b1
 
     float[] array2 =new float[] { 2.1f, 34.5f, 62.8f};
     

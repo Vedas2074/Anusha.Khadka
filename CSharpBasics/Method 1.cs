@@ -1,7 +1,10 @@
 using System;
 using System.Linq;
 
+<<<<<<< HEAD
 namespace AccessmodifierAndMethods
+=======
+>>>>>>> 301c4214ea5e0449dead4e2d1e484379f176e3b1
 class Methods 
 {
     void PrintInfo()
