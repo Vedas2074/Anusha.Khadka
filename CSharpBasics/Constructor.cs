@@ -24,6 +24,8 @@ namespace LearningClasses
 
             public byte Age {get; set; }
 
+            public static string ScientificName = "Homo-sapiens";
+
         }
     
 }
