@@ -1,54 +1,79 @@
 using System;
+
 class IterationStatement
 {
-    //Pascal case: ItrationStatement (class, methods)
-    //Camel case: iterationStement(variables)
-    static void Main()
+
+    static void Main456()
     {
         IterationStatement iterationStatement = new IterationStatement();
-        iterationStatement.LearnWhileLoops();
+        iterationStatement.LearnForLoops();
     }
-    void LearnForLoops()
+    public void LearnForLoops()
     {
-        for(int i = 0; i < 10; i++)
+        int i;
+        for(i=0; i < 10; i++)
         {
             Console.WriteLine("Hello World!");
         }
-        int[] numbers = { 4,5,23,45,67,12};
-        //for(int x = 0; x < numbers.Length; x++)
-        //{
-        //    Console.WriteLine(numbers[x]);
-       // }
-        foreach (int num in numbers)
+
+        // int[] numbers = {4, 5, 63, 56, 64, 12};
+        // for (int x = 0; x < numbers.Length; x++)
+        // {
+        //     Console.WriteLine(numbers[x]);
+        // }
+
+        int[] numbers1 = {4, 5, 23, 45, 12};
+        foreach (int num in numbers1)
         {
-            if (num % 2 == 0)
+            if(num%2 == 1)
             {
-                Console.WriteLine(num);
+            Console.WriteLine(num);
+            }
+        }
+
+        int[] numbers2 = {4, 5, 63, 56, 64, 12, 34, 55, 21, 38};
+        for (int x = 0; x < numbers2.Length; x++)
+        {
+            if(numbers2[x]%2 == 0)
+            {
+            Console.WriteLine(numbers2[x]);
             }
         }
     }
+
+    // public void LearnWhileLoops()
+    // {
+    //     int i = 0;
+    //     while (i < 10)
+    //     {
+    //         Console.WriteLine("Hello Again");
+    //         i++;
+    //     }
+    // }
+
     void LearnWhileLoops()
     {
-        //int i = 0;
-        //while (i < 10)
-        //{
-            //Console.WriteLine("Hello World!");
-           // i++;
-        //}
-        string confirm = "Y";
-        while (confirm == "Y")
-        {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Want to print again?");
-            confirm = Console.ReadLine();
-        }
+        // string confirm = "Y";
+        // while (confirm == "Y")
+        // {
+        //     Console.WriteLine("Hello World!");
+
+        //     Console.WriteLine("Want to print one more time?");
+        //     confirm = Console.ReadLine();
+        // }
+
         string confirm1 = "Y";
         do
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Do you want to print again?");
-            confirm1 = Console.ReadLine()
-        }
-        while (confirm1 == "Y");
+
+            Console.WriteLine("Want to print one more time?");
+            confirm1 = Console.ReadLine();
+        }while (confirm1 == "Y");
     }
+
+    
+
+
+
 }
