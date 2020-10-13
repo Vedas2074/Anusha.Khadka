@@ -1,5 +1,7 @@
-﻿﻿using LearningClasses;
+﻿﻿
+//using LearningClasses;
 using System;
+using FileDirectoryHandling;
 
 class Program
 {
@@ -21,15 +23,25 @@ class Program
 
                 
         // Inheritance examples
-        Shape r = new Rectangle(23.6, 6.32);
-        Rectangle r1 = new Rectangle(278.6, 61.32);
-        r.PrintDetails();
-        r1.PrintDetails();
+        // Shape r = new Rectangle(23.6, 6.32);
+        // Rectangle r1 = new Rectangle(278.6, 61.32);
+        // r.PrintDetails();
+        // r1.PrintDetails();
 
-        Shape s = new Square(34.5);        
-        s.PrintDetails();
+        // Shape s = new Square(34.5);        
+        // s.PrintDetails();
 
-        Shape c = new Circle(23.4);
-        c.PrintDetails();
+        // Shape c = new Circle(23.4);
+        // c.PrintDetails();
+
+     
+        // file.LearnFileWriting();
+        // file.LearnFileInfo();
+           FileIO file = new FileIO();
+            file.LearnDirectoryInfo();
     }
+       
+
+
+
 }
