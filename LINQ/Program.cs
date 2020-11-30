@@ -6,6 +6,7 @@ namespace LINQ
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             // LINQ - Language INtegrated Query
@@ -43,7 +44,9 @@ namespace LINQ
 
             // Quantifiers
             var isEvenThere = numbers.Any(num => num % 2 == 0);
+
             var areAllEvens = numbers.All(num => num % 2 == 0);
+            
             var is26there = numbers.Contains(26);
 
             var result8 = Enumerable.Range(1, 1000);
