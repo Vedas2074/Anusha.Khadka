@@ -23,20 +23,19 @@ namespace EmployeeManagement.Controllers
             var emp = employees.FirstOrDefault(x => x.Id == id);
             return View(emp);
 
-
         }
-        
-           public ActionResult Add()
+        public ActionResult Add()
         {
             
             return View();
 
         }
-        
         [HttpPost]
-        public string Add(Employee employee)
+         public string Add(Employee employee)
         {
+            
             return "Record Saved";
-        }
+
+        }  
     }
 }
