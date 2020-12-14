@@ -1,4 +1,7 @@
 @model List<Department>
+  @{
+    ViewData["t"]= "Department List";
+  }
 <h2>Departments</h2>
 
 
@@ -13,11 +16,18 @@
     </tr>
   </thead>
   <tbody>
+
     @foreach (var department in Model)
-    {    
-    <tr>
+    {    <tr>
         <th scope="row">@department.Id</th>
-        <td>@department.DepartmentName</td>
+        <td>
+          
+          <a href="/department/detail?id=103">@department.DepartmentName</a>
+         
+            
+</td>
+    
+        
          <td>@department.DepartmentNo</td>
           <td>@department.Floor</td>
         <td>@department.Salary</td>
