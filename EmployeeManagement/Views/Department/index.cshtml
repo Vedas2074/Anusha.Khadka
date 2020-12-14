@@ -1,5 +1,5 @@
 @model List<Department>
-<h2> Some Departments</h2>
+<h2>Departments</h2>
 
 
 <table class="table">
@@ -8,6 +8,7 @@
       <th scope="col">#</th>
       <th scope="col">DepartmentName</th>
        <th scope="col">DepartmentNo</th>
+        <th scope="col">Floor</th>
       <th scope="col">Salary</th>
     </tr>
   </thead>
@@ -18,7 +19,7 @@
         <th scope="row">@department.Id</th>
         <td>@department.DepartmentName</td>
          <td>@department.DepartmentNo</td>
-
+          <td>@department.Floor</td>
         <td>@department.Salary</td>
     </tr>
     }

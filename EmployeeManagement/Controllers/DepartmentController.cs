@@ -14,28 +14,44 @@ namespace EmployeeManagement.Controllers
         {
             Department department1 = new Department()
             {
-                Id = 1,
-                DepartmentName = "HR",
-                DepartmentNo = 678 ,
-                Salary = 1546312
+                Id = 103,
+                DepartmentName = "Finance",
+                DepartmentNo = 770,
+                Floor = "3rd",
+                Salary = 3000000
             };
             Department department2 = new Department()
             {
-                Id = 2,
-                DepartmentName = "Finance",
-                DepartmentNo= 123 ,
-                Salary = 6312155
+                Id = 104,
+                DepartmentName = "HR",
+                DepartmentNo = 800,
+                Floor = "1st",
+                Salary = 8900000
             };
             Department department3 = new Department()
             {
-                Id = 3,
-                DepartmentName = "Account",
-                DepartmentNo= 990 ,
-                Salary = 633565
+                Id = 105,
+                DepartmentName = "Marketing",
+                 DepartmentNo = 900,
+                 Floor = "2nd",
+                Salary = 8500000
             };
-            List<Department> departments =  new List<Department>() {department1, department2 ,department3};
+            List<Department> departments =  new List<Department>() {department1, department2,department3};
 
             return View(departments);
         }
+        public ActionResult Add()
+        {
+            
+            return View();
+
+        }
+        [HttpPost]
+         public string Add(Department department)
+        {
+            
+            return "Record Saved";
+
+        }  
     }
 }

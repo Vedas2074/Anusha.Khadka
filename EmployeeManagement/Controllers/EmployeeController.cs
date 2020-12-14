@@ -25,12 +25,18 @@ namespace EmployeeManagement.Controllers
 
 
         }
-           
+        
            public ActionResult Add()
         {
             
             return View();
 
+        }
+        
+        [HttpPost]
+        public string Add(Employee employee)
+        {
+            return "Record Saved";
         }
     }
 }
