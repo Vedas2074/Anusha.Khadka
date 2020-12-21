@@ -14,6 +14,12 @@
       <th scope="col">Address</th>
       <th scope="col">Age</th>
       <th scope="col">Salary</th>
+       <th scope="col">Action</th>
+       <th></th>
+       <th>
+
+       </th>
+     
     </tr>
   </thead>
   <tbody>
@@ -23,7 +29,7 @@
         <th scope="row">@employee.Id</th>
         <td>
           
-          <a href="/employee/detail?id=2">@employee.FirstName</a>
+          <a href="/employee/detail?id=@employee.Id">@employee.FirstName</a>
 
 
 
@@ -32,6 +38,9 @@
         <td>@employee.Address</td>
         <td>@employee.Age</td>
         <td>@employee.Salary</td>
+        <td><a class="btn btn-warning" href="/employee/edit?id=@employee.Id">Edit</a><td></td>
+       <td><a href="/Employee/delete?id=@employee.Id"> <button class="btn btn-danger">Delete</button></a></td>
+      
     </tr>
     }
   </tbody>

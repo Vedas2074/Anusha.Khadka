@@ -1,0 +1,14 @@
+@model Employee
+<form action="/employee/delete" method="POST">
+    <input type="hidden" asp-for="Id" />
+
+        Are you sure to delete this record?
+
+        <br>
+        <button type="submit" class="btn btn-danger"> Yes,Delete 
+        
+        </button>
+        
+        </form>
+       
+<a href="/Employee/detail?id=@Model.Id"><button class="btn btn-primary btn-sm">Go back to employee</button></a>
