@@ -18,6 +18,7 @@ public class StateManagementController: Controller
 
 
         //1. Cookie
+        
          var userName = "Anusha Khadka";
         CookieOptions options = new CookieOptions();
         // options.MaxAge = DateTimeOffset.FromUnixTimeSeconds(3242).Hour;
